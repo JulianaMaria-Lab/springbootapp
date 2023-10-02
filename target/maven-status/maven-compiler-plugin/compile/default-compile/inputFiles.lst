@@ -1,1 +1,5 @@
 /workspace/springbootapp/src/main/java/com/fatec/springbootapp/SpringbootappApplication.java
+/workspace/springbootapp/src/main/java/com/fatec/springbootapp/controller/TrabalhoController.java
+/workspace/springbootapp/src/main/java/com/fatec/springbootapp/entity/Trabalho.java
+/workspace/springbootapp/src/main/java/com/fatec/springbootapp/service/TrabalhoService.java
+/workspace/springbootapp/src/main/java/com/fatec/springbootapp/repository/TrabalhoRepository.java

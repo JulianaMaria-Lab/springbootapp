@@ -1,0 +1,9 @@
+Atividade:
+1) Crie uma classe que mapeie a tabela criada;
+2) Crie um repositório para a classe criada no item 1 contendo uma consulta capaz de buscar todos
+os trabalhos que contenham uma palavra em seu título com nota superior a um número inteiro;
+3) Crie um serviço com 3 métodos: um para cadastro, um para listar todos os registros da tabela e
+outro para buscar pelo id;
+4) Crie um controller que atenda na URL “\trabalho” e contenha 3 rotas: uma para cadastro, outra
+para listar todos os registros e uma última para buscar pelo id.
+Importante: Utilize java.time.LocalDateTime para mapear datetime.
