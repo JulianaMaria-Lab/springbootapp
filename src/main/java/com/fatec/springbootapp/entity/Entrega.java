@@ -27,7 +27,7 @@ public class Entrega {
     @Column(name="ent_data_hora_limite")
     private LocalDateTime data_hora_limite;
 
-    @Column(name="peso")
+    @Column(name="ent_peso")
     private Integer peso;
 
     @Column(name="ent_observacoes")
@@ -41,6 +41,10 @@ public class Entrega {
         this.data_hora_limite = data_hora_limite;
         this.peso = peso;
         this.observacoes = observacoes;
+    }
+
+    public Entrega (){
+
     }
 
     public Long getId() {

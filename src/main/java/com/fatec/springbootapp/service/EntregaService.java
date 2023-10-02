@@ -1,18 +1,18 @@
 package com.fatec.springbootapp.service;
 
-import java.security.Timestamp;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-import org.hibernate.annotations.CurrentTimestamp;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.fatec.springbootapp.entity.Entrega;
 import com.fatec.springbootapp.repository.EntregaRepository;
 
 import jakarta.transaction.Transactional;
 
+@Service
 public class EntregaService implements IEntregaService{
 
     @Autowired

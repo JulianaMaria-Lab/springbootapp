@@ -12,7 +12,7 @@ CREATE TABLE ent_entrega (
     ent_data_hora_cadastro datetime not null,
     ent_data_hora_limite datetime not null,
     ent_peso int not null,
-    ent_observcaoes varchar(200)
+    ent_observacoes varchar(200)
 );
 
 insert into ent_entrega (ent_descricao, ent_data_hora_cadastro, ent_data_hora_limite,ent_peso)
