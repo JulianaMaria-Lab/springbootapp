@@ -31,7 +31,7 @@ public class EntregaService implements IEntregaService{
     }
 
     @Override
-    public Optional<Entrega> findByDataLimiteEntrega(LocalDateTime data_hora_limite){
+    public List<Entrega> buscarValorSuperiorDataLimiteEntrega(LocalDateTime data_hora_limite){
         return entregaRepo.findByDataLimiteEntrega(data_hora_limite);
     }
     
