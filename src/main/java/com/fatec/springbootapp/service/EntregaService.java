@@ -2,10 +2,10 @@ package com.fatec.springbootapp.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.fatec.springbootapp.entity.Entrega;
 import com.fatec.springbootapp.repository.EntregaRepository;
@@ -19,11 +19,12 @@ public class EntregaService implements IEntregaService{
     private EntregaRepository entregaRepo;
 
     @Transactional
-    public Entrega novaEntrega(Entrega entrega) {
-        if(entrega.getData_hora_cadastro() == null );
-        entrega.setData_hora_cadastro(null);
-        return entrega;
-        }
+    public Entrega novaEntrega(@RequestBody Entrega entrega) {
+        if (entrega.getData_hora_cadastro() == null) {
+            entrega.setData_hora_cadastro(LocalDateTime.now());
+            }
+        return entregaRepo.save(entrega);
+    }
 
     @Override
     public List<Entrega> buscarTodasEntregas() {

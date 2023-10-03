@@ -1,5 +1,1 @@
-com/fatec/springbootapp/entity/Trabalho.class
-com/fatec/springbootapp/repository/TrabalhoRepository.class
-com/fatec/springbootapp/controller/TrabalhoController.class
 com/fatec/springbootapp/SpringbootappApplication.class
-com/fatec/springbootapp/service/TrabalhoService.class
