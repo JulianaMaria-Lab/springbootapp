@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.4</version>
+		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.fatec</groupId>
-	<artifactId>springbootapp</artifactId>
+	<groupId>br.gov.sp.fatec</groupId>
+	<artifactId>springboot3app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springbootapp</name>
+	<name>springboot3app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -37,10 +37,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-		</dependency>
+		    <groupId>org.mariadb.jdbc</groupId>
+		    <artifactId>mariadb-java-client</artifactId>
+		    <version>3.1.4</version><!--$NO-MVN-MAN-VER$-->
+        </dependency>
+
 	</dependencies>
 
 	<build>
@@ -49,14 +52,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
-            <configuration>
-                <release>17</release>
-            </configuration>
-        </plugin>
 		</plugins>
 	</build>
 
